@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.24",
+    "runtime-version": "3.26",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "tags": [],
@@ -32,8 +32,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.24/gnome-desktop-3.24.1.tar.xz",
-                    "sha256": "de09b7d38b4baccae48c527778480731cb12f00848758be186971b2b4acc45ab"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.26/gnome-desktop-3.26.2.tar.xz",
+                    "sha256": "f7561a7a313fc474b2c390cd9696df1f5c1e1556080e43f4afe042b1060e5f2a"
                 }
             ]
         },
@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/3.22/gnome-characters-3.22.0.tar.xz",
-                    "sha256": "0778b625646d6d934cf252d58a2e16403889da6bfc237bdca1d3cb3258f63d4e"
+                    "url": "https://download.gnome.org/sources/gnome-characters/3.26/gnome-characters-3.26.2.tar.xz",
+                    "sha256": "69d0218b4ce16451bef0e6ee9f9f18f5b7851aa3a758b13315d592b077374f7b"
                 }
             ]
         }
