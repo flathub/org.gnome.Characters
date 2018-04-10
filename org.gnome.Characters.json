@@ -4,7 +4,7 @@
     "runtime-version": "3.28",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
-    "tags": [],
+    "copy-icon": true,
     "rename-icon": "gnome-characters",
     "finish-args": [
         /* X11 + XShm access */
@@ -38,12 +38,27 @@
             ]
         },
         {
-            "name": "gnome-characters",
+            "name": "libunistring",
+            "cleanup": [
+                "/share"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/3.26/gnome-characters-3.26.2.tar.xz",
-                    "sha256": "69d0218b4ce16451bef0e6ee9f9f18f5b7851aa3a758b13315d592b077374f7b"
+                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.9.tar.xz",
+                    "sha256": "a4d993ecfce16cf503ff7579f5da64619cee66226fb3b998dafb706190d9a833"
+                }
+            ]
+        },
+        {
+            "name": "gnome-characters",
+            "buildsystem": "meson",
+            "config-opts": ["-Ddbus_service_dir=/app/share/dbus-1/services/"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-characters/3.28/gnome-characters-3.28.0.tar.xz",
+                    "sha256": "c0d5cfb41ca1d2a32ab5d37cf77840935ef1bb7ed59bcd69e72acff3b4170993"
                 }
             ]
         }
