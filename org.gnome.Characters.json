@@ -32,8 +32,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.0.tar.xz",
-                    "sha256": "f1df71c39e32147f6d58f53a9c05b964b00b7c98fbca090419355437c72fd59d"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.2.tar.xz",
+                    "sha256": "605087bff17c61bc167ccb5a61ed4d06eab922fcce384576ed2a3577214c8330"
                 }
             ]
         },
@@ -45,8 +45,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.9.tar.xz",
-                    "sha256": "a4d993ecfce16cf503ff7579f5da64619cee66226fb3b998dafb706190d9a833"
+                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
+                    "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
         },
@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/3.28/gnome-characters-3.28.0.tar.xz",
-                    "sha256": "c0d5cfb41ca1d2a32ab5d37cf77840935ef1bb7ed59bcd69e72acff3b4170993"
+                    "url": "https://download.gnome.org/sources/gnome-characters/3.28/gnome-characters-3.28.2.tar.xz",
+                    "sha256": "8016f974f4fcdd207f1a3784b2e82c66ebe62451ced0d03fd3bc181e87b0d512"
                 }
             ]
         }
