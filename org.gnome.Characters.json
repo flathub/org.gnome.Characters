@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.32",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "copy-icon": true,
@@ -32,8 +32,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.2.tar.xz",
-                    "sha256": "605087bff17c61bc167ccb5a61ed4d06eab922fcce384576ed2a3577214c8330"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.0.tar.xz",
+                    "sha256": "a6393dc5fc29fc0652ac84c73b3da205d0b0168128c4cf6d27797a08f3d07b54"
                 }
             ]
         },
@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/3.28/gnome-characters-3.28.2.tar.xz",
-                    "sha256": "8016f974f4fcdd207f1a3784b2e82c66ebe62451ced0d03fd3bc181e87b0d512"
+                    "url": "https://download.gnome.org/sources/gnome-characters/3.32/gnome-characters-3.32.0.tar.xz",
+                    "sha256": "ed2fb06bca885b3b67a0effa6bb5fb68b612ac8aad639990a344bbd4d3fc8ab3"
                 }
             ]
         }
