@@ -27,26 +27,30 @@
     ],
     "modules": [
         {
-            "name": "gnome-desktop",
-            "config-opts": ["--disable-debug-tools", "--disable-udev"],
-            "sources": [
+            "name" : "gnome-desktop",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Ddebug-tools=false",
+                "-Dudev=disabled"
+            ],
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.2.tar.xz",
-                    "sha256": "605087bff17c61bc167ccb5a61ed4d06eab922fcce384576ed2a3577214c8330"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.2.tar.xz",
+                    "sha256" : "099f71b29310c999c28f2bf272c846bbd7efc8c6c438b37d15f374230ce92d2e"
                 }
             ]
         },
         {
-            "name": "libunistring",
-            "cleanup": [
+            "name" : "libunistring",
+            "cleanup" : [
                 "/share"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
-                    "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
+                    "type" : "archive",
+                    "url" : "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
+                    "sha256" : "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
         },
