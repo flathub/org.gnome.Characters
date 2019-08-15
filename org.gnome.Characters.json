@@ -1,64 +1,86 @@
 {
-    "app-id": "org.gnome.Characters",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
-    "branch": "stable",
-    "sdk": "org.gnome.Sdk",
-    "copy-icon": true,
-    "rename-icon": "gnome-characters",
-    "finish-args": [
-        /* X11 + XShm access */
-        "--share=ipc", "--socket=x11",
-        /* Wayland access */
+    "app-id" : "org.gnome.Characters",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "3.32",
+    "command" : "gnome-characters",
+    "sdk" : "org.gnome.Sdk",
+    "finish-args" : [
+        "--share=ipc",
+        "--socket=x11",
         "--socket=wayland",
-        /* Needed for dconf to work */
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "build-options" : {
-        "cflags": "-O2 -g",
-        "cxxflags": "-O2 -g"
+        "cflags" : "-O2 -g",
+        "cxxflags" : "-O2 -g",
+        "env" : {
+        }
     },
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "*.la", "*.a",
-                "/share/doc", "/share/gir-1.0"
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "*.la",
+        "*.a",
+        "/share/doc",
+        "/share/gir-1.0"
     ],
-    "modules": [
+    "modules" : [
         {
-            "name": "gnome-desktop",
-            "config-opts": ["--disable-debug-tools", "--disable-udev"],
-            "sources": [
+            "name" : "gnome-desktop",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Ddebug-tools=false",
+                "-Dudev=disabled"
+            ],
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.2.tar.xz",
-                    "sha256": "605087bff17c61bc167ccb5a61ed4d06eab922fcce384576ed2a3577214c8330"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.2.tar.xz",
+                    "sha256" : "099f71b29310c999c28f2bf272c846bbd7efc8c6c438b37d15f374230ce92d2e"
                 }
             ]
         },
         {
-            "name": "libunistring",
-            "cleanup": [
+            "name" : "libunistring",
+            "cleanup" : [
                 "/share"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
-                    "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
+                    "type" : "archive",
+                    "url" : "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
+                    "sha256" : "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
         },
         {
-            "name": "gnome-characters",
-            "buildsystem": "meson",
-            "config-opts": ["-Ddbus_service_dir=/app/share/dbus-1/services/"],
-            "sources": [
+            "name" : "gnome-characters",
+            "buildsystem" : "meson",
+            "builddir" : true,
+            "config-opts" : [
+                "--buildtype",
+                "release"
+            ],
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/3.28/gnome-characters-3.28.2.tar.xz",
-                    "sha256": "8016f974f4fcdd207f1a3784b2e82c66ebe62451ced0d03fd3bc181e87b0d512"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-characters/3.32/gnome-characters-3.32.1.tar.xz",
+                    "sha256" : "5a9225ad527f9e185d3f1beb84e358a6571578aaeb75f47c4e07cdd48b08efd6"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "appdata-simplify-OARS-data.patch",
+                        "appdata-add-releases.patch"
+                    ]
                 }
             ]
         }

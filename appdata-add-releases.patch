@@ -1,0 +1,29 @@
+From 3a11f67750cb5da6ce687fb6e460a8cab223acdf Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Wed, 14 Aug 2019 12:11:20 +0100
+Subject: [PATCH 2/2] appdata: add <releases>
+
+This is the last stable release. (<releases> is now mandatory on
+Flathub.)
+
+This should be updated for each new release, ideally with a
+<description> containing release notes.
+---
+ data/org.gnome.Characters.appdata.xml.in | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/data/org.gnome.Characters.appdata.xml.in b/data/org.gnome.Characters.appdata.xml.in
+index 19486e0..5a88c45 100644
+--- a/data/org.gnome.Characters.appdata.xml.in
++++ b/data/org.gnome.Characters.appdata.xml.in
+@@ -33,4 +33,7 @@
+   </kudos>
+   <translation type="gettext">org.gnome.Characters</translation>
+   <content_rating type="oars-1.1"/>
++  <releases>
++    <release version="3.32.1" date="2019-04-08"/>
++  </releases>
+ </component>
+-- 
+2.20.1
+
