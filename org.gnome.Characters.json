@@ -62,6 +62,13 @@
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-characters/3.32/gnome-characters-3.32.1.tar.xz",
                     "sha256" : "5a9225ad527f9e185d3f1beb84e358a6571578aaeb75f47c4e07cdd48b08efd6"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "appdata-simplify-OARS-data.patch",
+                        "appdata-add-releases.patch"
+                    ]
                 }
             ]
         }
