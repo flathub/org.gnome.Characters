@@ -63,6 +63,13 @@
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-characters/3.34/gnome-characters-3.34.0.tar.xz",
                     "sha256" : "14438572ee2a99305a5d514d83237c01e873a7bb7dfff5478bbb327894ee0a57"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "appdata-simplify-OARS-data.patch",
+                        "appdata-add-releases.patch"
+                    ]
                 }
             ]
         }
