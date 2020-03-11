@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Characters",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.34",
+    "runtime-version" : "3.36",
     "command" : "gnome-characters",
     "sdk" : "org.gnome.Sdk",
     "finish-args" : [
@@ -34,8 +34,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-desktop/3.34/gnome-desktop-3.34.4.tar.xz",
-                    "sha256" : "c53e72737cc21535f2fd4b72bc2fb5594741cfc3d3ce90949bc5cc07bade0cbc"
+                    "url" : "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.0.tar.xz",
+                    "sha256" : "4b04c359ccddeffb15f2e148a7871c474f6cfed1e0da21de060a93f6b9ae5c15"
                 }
             ]
         },
