@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Characters",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.36",
+    "runtime-version" : "40",
     "command" : "gnome-characters",
     "sdk" : "org.gnome.Sdk",
     "finish-args" : [
@@ -34,8 +34,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.2.tar.xz",
-                    "sha256" : "38f994dcb1e1ae093d1c929c7acc4f88e39111e43b5fdc13125b0f6e2311c789"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/40/gnome-desktop-40.0.tar.xz",
+                    "sha256": "20abfd3f831e4e8092b55839311661dc73b2bf13fc9bef71c4a5a4475da9ee04"
                 }
             ]
         },
@@ -51,6 +51,25 @@
                     "sha256" : "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
+        },        
+        {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dexamples=false",
+                "-Dprofiling=false",
+                "-Dglade_catalog=disabled",
+                "-Dintrospection=enabled",
+                "-Dtests=false",
+                "-Dvapi=false"
+            ],
+            "sources" : [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.0.tar.xz",
+                    "sha256": "39f590ae20910e76fe1c0607b2ebe589750f45610d6aeec5c30e2ee602a20b25"
+                }
+            ]
         },
         {
             "name" : "gnome-characters",
@@ -61,15 +80,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-characters/3.34/gnome-characters-3.34.0.tar.xz",
-                    "sha256" : "14438572ee2a99305a5d514d83237c01e873a7bb7dfff5478bbb327894ee0a57"
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "appdata-simplify-OARS-data.patch",
-                        "appdata-add-releases.patch"
-                    ]
+                    "url" : "https://download.gnome.org/sources/gnome-characters/40/gnome-characters-40.0.tar.xz",
+                    "sha256" : "0a62f5fd56592d0f3eb7be4b132db796c998d7be08ed67e4bf7f059138515d7c"
                 }
             ]
         }
