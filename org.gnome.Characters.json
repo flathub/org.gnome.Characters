@@ -35,7 +35,11 @@
                 {
                     "type" : "archive",
                     "url": "https://download.gnome.org/sources/gnome-desktop/40/gnome-desktop-40.0.tar.xz",
-                    "sha256": "20abfd3f831e4e8092b55839311661dc73b2bf13fc9bef71c4a5a4475da9ee04"
+                    "sha256": "20abfd3f831e4e8092b55839311661dc73b2bf13fc9bef71c4a5a4475da9ee04",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-desktop"
+                    }
                 }
             ]
         },
@@ -62,7 +66,11 @@
                 {
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-characters/40/gnome-characters-40.0.tar.xz",
-                    "sha256" : "0a62f5fd56592d0f3eb7be4b132db796c998d7be08ed67e4bf7f059138515d7c"
+                    "sha256" : "0a62f5fd56592d0f3eb7be4b132db796c998d7be08ed67e4bf7f059138515d7c",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-characters"
+                    }
                 }
             ]
         }
