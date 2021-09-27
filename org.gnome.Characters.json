@@ -1,16 +1,16 @@
 {
-    "app-id" : "org.gnome.Characters",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
-    "command" : "gnome-characters",
-    "sdk" : "org.gnome.Sdk",
-    "finish-args" : [
+    "app-id": "org.gnome.Characters",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "40",
+    "command": "gnome-characters",
+    "sdk": "org.gnome.Sdk",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/org/gnome/Characters/"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/share/pkgconfig",
@@ -23,19 +23,19 @@
         "/share/doc",
         "/share/gir-1.0"
     ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "gnome-desktop",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "gnome-desktop",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Ddebug-tools=false",
                 "-Dudev=disabled"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/40/gnome-desktop-40.0.tar.xz",
-                    "sha256": "20abfd3f831e4e8092b55839311661dc73b2bf13fc9bef71c4a5a4475da9ee04",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/41/gnome-desktop-41.0.tar.xz",
+                    "sha256": "69cb1d3d9a10700eb66348ef1c0e66a855fc5a97ae62902df97a499da11562d2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -44,29 +44,29 @@
             ]
         },
         {
-            "name" : "libunistring",
-            "cleanup" : [
+            "name": "libunistring",
+            "cleanup": [
                 "/share"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
-                    "sha256" : "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
+                    "type": "archive",
+                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
+                    "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
-        },        
+        },
         {
-            "name" : "gnome-characters",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "gnome-characters",
+            "buildsystem": "meson",
+            "config-opts": [
                 "--buildtype=release"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-characters/40/gnome-characters-40.0.tar.xz",
-                    "sha256" : "0a62f5fd56592d0f3eb7be4b132db796c998d7be08ed67e4bf7f059138515d7c",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-characters/41/gnome-characters-41.0.tar.xz",
+                    "sha256": "e129eca93d0099490bc2bfe6437e685fd9855e264b32fb918c0e58ee6aac867b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-characters"
