@@ -34,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/41/gnome-desktop-41.3.tar.xz",
-                    "sha256": "8cd1caab9311828c0452468c6a5067a9bc4463835b23a14be44e8fd9b03001c6",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.0.tar.xz",
+                    "sha256": "f3caa293a5e86f6ccad18f817273db1c67061e680d79d839aa8a7528e5bb26d6",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -65,8 +65,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/41/gnome-characters-41.0.tar.xz",
-                    "sha256": "e129eca93d0099490bc2bfe6437e685fd9855e264b32fb918c0e58ee6aac867b",
+                    "url": "https://download.gnome.org/sources/gnome-characters/42/gnome-characters-42.0.tar.xz",
+                    "sha256": "5da0ffb816f8a6b44f303744ca827a34080118c1c938d8d79af17b7fe67980f8",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-characters"
