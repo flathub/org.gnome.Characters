@@ -1,10 +1,11 @@
 {
     "app-id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
+        "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -25,6 +26,21 @@
     ],
     "modules": [
         {
+            "name": "noto-emoji",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /app/share/fonts",
+                "cp ./fonts/NotoColorEmoji.ttf /app/share/fonts"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.034.tar.gz",
+                    "sha256": "a5af92ba8e297e447562d7bdb11453fa40be6d88655e4a647976f0c9be4245ab"
+                }
+            ]
+        },
+        {
             "name": "gnome-desktop",
             "buildsystem": "meson",
             "config-opts": [
@@ -34,25 +50,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/41/gnome-desktop-41.3.tar.xz",
-                    "sha256": "8cd1caab9311828c0452468c6a5067a9bc4463835b23a14be44e8fd9b03001c6",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.0.tar.xz",
+                    "sha256": "f3caa293a5e86f6ccad18f817273db1c67061e680d79d839aa8a7528e5bb26d6",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
                     }
-                }
-            ]
-        },
-        {
-            "name": "libunistring",
-            "cleanup": [
-                "/share"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
-                    "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
                 }
             ]
         },
@@ -65,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/41/gnome-characters-41.0.tar.xz",
-                    "sha256": "e129eca93d0099490bc2bfe6437e685fd9855e264b32fb918c0e58ee6aac867b",
+                    "url": "https://download.gnome.org/sources/gnome-characters/42/gnome-characters-42.0.tar.xz",
+                    "sha256": "5da0ffb816f8a6b44f303744ca827a34080118c1c938d8d79af17b7fe67980f8",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-characters"
