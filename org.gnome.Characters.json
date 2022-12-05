@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/43/gnome-characters-43.0.tar.xz",
-                    "sha256": "a685b9cbf93545ed391168c41c9d8bf83785abbfb489675827ee7342471baac8",
+                    "url": "https://download.gnome.org/sources/gnome-characters/43/gnome-characters-43.1.tar.xz",
+                    "sha256": "b23e15d950978b363c81a47261ee1a3b47db3c6697ee169ff213eea6572a7841",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-characters"
