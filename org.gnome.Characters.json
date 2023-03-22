@@ -1,5 +1,5 @@
 {
-    "app-id": "org.gnome.Characters",
+    "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
     "runtime-version": "43",
     "command": "gnome-characters",
