@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
