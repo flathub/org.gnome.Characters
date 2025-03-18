@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.042.tar.gz",
-                    "sha256": "b56bd2fa4029d0f057b66b742ac59af243dbc91067fed3eb4929dac762440fc9"
+                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.047.tar.gz",
+                    "sha256": "2cfaf5a427eb26334cdb30d98e4a0c005b660504a339249dc54373e566f09b50"
                 }
             ]
         },
@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/47/gnome-characters-47.0.tar.xz",
-                    "sha256": "6bcf05a22f30f131d8a8035b0f63d86a9567007a5f6df5ce8556ba06777b7574",
+                    "url": "https://download.gnome.org/sources/gnome-characters/48/gnome-characters-48.0.tar.xz",
+                    "sha256": "a2c32ca54d911db2404420350d3442e691a2dce8b0f5d00899f66cff8c3c8d71",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
