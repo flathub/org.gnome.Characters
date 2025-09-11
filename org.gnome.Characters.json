@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.047.tar.gz",
-                    "sha256": "2cfaf5a427eb26334cdb30d98e4a0c005b660504a339249dc54373e566f09b50"
+                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.048.tar.gz",
+                    "sha256": "e6396642172e3d5031bef5f381cc047a007588e73b26209ba1c47b3d1f8faa60"
                 }
             ]
         },
@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz",
-                    "sha256": "ae7ca55dc9e08914999741523a17d29ce223915626bd2462a120bf96f47a79ab",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz",
+                    "sha256": "1d8cb9c6a328eb689b0c1269cf53834cc84d851d7e71970cdabba82706b44984",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/48/gnome-characters-48.0.tar.xz",
-                    "sha256": "a2c32ca54d911db2404420350d3442e691a2dce8b0f5d00899f66cff8c3c8d71",
+                    "url": "https://download.gnome.org/sources/gnome-characters/49/gnome-characters-49.0.tar.xz",
+                    "sha256": "1b6e548a82e26aa4ec9afe409d69a25709362c037fa5c533186d6a1db29af6e3",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
