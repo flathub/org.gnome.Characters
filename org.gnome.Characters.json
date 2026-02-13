@@ -26,21 +26,6 @@
     ],
     "modules": [
         {
-            "name": "noto-emoji",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/share/fonts",
-                "cp ./fonts/NotoColorEmoji.ttf /app/share/fonts"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.048.tar.gz",
-                    "sha256": "e6396642172e3d5031bef5f381cc047a007588e73b26209ba1c47b3d1f8faa60"
-                }
-            ]
-        },
-        {
             "name": "gnome-desktop",
             "buildsystem": "meson",
             "config-opts": [
