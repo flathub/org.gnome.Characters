@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50beta",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -55,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/49/gnome-characters-49.1.tar.xz",
-                    "sha256": "795c0fe434e602dc783391fb5830dbc7d8e1ea05ca77210fb140e2f6f40a145c",
+                    "url": "https://download.gnome.org/sources/gnome-characters/50/gnome-characters-50.alpha.tar.xz",
+                    "sha256": "f1d7c611242b82ee716976c17c20d3516d512f23f4b255ca4e27f0decd6849b9",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
