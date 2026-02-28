@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50beta",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -26,32 +26,19 @@
     ],
     "modules": [
         {
-            "name": "noto-emoji",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/share/fonts",
-                "cp ./fonts/NotoColorEmoji.ttf /app/share/fonts"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.048.tar.gz",
-                    "sha256": "e6396642172e3d5031bef5f381cc047a007588e73b26209ba1c47b3d1f8faa60"
-                }
-            ]
-        },
-        {
             "name": "gnome-desktop",
             "buildsystem": "meson",
             "config-opts": [
                 "-Ddebug_tools=false",
-                "-Dudev=disabled"
+                "-Ddesktop_docs=false",
+                "-Dudev=disabled",
+                "-Dlegacy_library=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz",
-                    "sha256": "1d8cb9c6a328eb689b0c1269cf53834cc84d851d7e71970cdabba82706b44984",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz",
+                    "sha256": "20e0995a6e3a03e8c1026c5a27bc3f45e69ffcc392ad743dcab6107a541d232f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -68,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/49/gnome-characters-49.1.tar.xz",
-                    "sha256": "795c0fe434e602dc783391fb5830dbc7d8e1ea05ca77210fb140e2f6f40a145c",
+                    "url": "https://download.gnome.org/sources/gnome-characters/50/gnome-characters-50.alpha.tar.xz",
+                    "sha256": "f1d7c611242b82ee716976c17c20d3516d512f23f4b255ca4e27f0decd6849b9",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
