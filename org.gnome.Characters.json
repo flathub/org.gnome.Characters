@@ -30,7 +30,9 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Ddebug_tools=false",
-                "-Dudev=disabled"
+                "-Ddesktop_docs=false",
+                "-Dudev=disabled",
+                "-Dlegacy_library=false"
             ],
             "sources": [
                 {
