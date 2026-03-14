@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50beta",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -25,21 +25,6 @@
         "/share/gir-1.0"
     ],
     "modules": [
-        {
-            "name": "noto-emoji",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/share/fonts",
-                "cp ./fonts/NotoColorEmoji.ttf /app/share/fonts"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.048.tar.gz",
-                    "sha256": "e6396642172e3d5031bef5f381cc047a007588e73b26209ba1c47b3d1f8faa60"
-                }
-            ]
-        },
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
@@ -70,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/49/gnome-characters-49.1.tar.xz",
-                    "sha256": "795c0fe434e602dc783391fb5830dbc7d8e1ea05ca77210fb140e2f6f40a145c",
+                    "url": "https://download.gnome.org/sources/gnome-characters/50/gnome-characters-50.0.tar.xz",
+                    "sha256": "4070734dd639b3094be467bb055a5461b2fc301cdfc9feddcb4a68f476ed5aad",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
