@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Characters",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "command": "gnome-characters",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz",
-                    "sha256": "20e0995a6e3a03e8c1026c5a27bc3f45e69ffcc392ad743dcab6107a541d232f",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/51/gnome-desktop-51.0.tar.xz",
+                    "sha256": "9ebeb9f1769d3c310caeadd921ab34c8f264b92937740518b3bc859a579a6912",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -47,8 +47,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-characters/50/gnome-characters-50.0.tar.xz",
-                    "sha256": "4070734dd639b3094be467bb055a5461b2fc301cdfc9feddcb4a68f476ed5aad",
+                    "url": "https://download.gnome.org/sources/gnome-characters/51/gnome-characters-51.0.tar.xz",
+                    "sha256": "8b90e9d7fcff43622ed34677f0029cd74b440185f1639af48c439f63bebadc31",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
