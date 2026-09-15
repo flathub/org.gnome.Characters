@@ -24,6 +24,7 @@
                 "-Ddebug_tools=false",
                 "-Ddesktop_docs=false",
                 "-Dudev=disabled",
+                "-Dqr=disabled",
                 "-Dlegacy_library=false"
             ],
             "sources": [
